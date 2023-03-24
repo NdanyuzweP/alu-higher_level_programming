@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-""" mmodule to open file and append to it"""
+"""Defines a file-writing function."""
 
 
 def write_file(filename="", text=""):
-    """function to define a counter
-    and it will write text to file
+    """Write a string to a UTF8 text file.
+    Args:
+        filename (str): The name of the file to write.
+        text (str): The text to write to the file.
+    Returns:
+        The number of characters written.
     """
-
-    with open(filename, 'w+') as f:
-        f.write(text)
-
-    return len(text)
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
