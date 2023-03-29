@@ -1,7 +1,7 @@
 -- creating second table in database
 CREATE TABLE second_table(
-	id INT
-	name VARCHAR(256)
+	id INT,
+	name VARCHAR(256),
 	score INT);
 
 INSERT INTO second_table (id, name, score)
