@@ -1,3 +1,3 @@
 #!/bin/bash
-# Getting started with curl
-curl -sI "$1" | grep 'Content-Length' | cut -d " " -f2;
+# Getting the byte size of HTTP header for a given URL.
+curl -s  "$1" | wc -c
